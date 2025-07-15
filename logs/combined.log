@@ -1,0 +1,97 @@
+2025-07-13T18:51:58.535Z [INFO]: Redis connected successfully 
+2025-07-13T18:51:58.537Z [INFO]: Database connected successfully 
+2025-07-13T18:51:58.543Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:51:58.552Z [INFO]: Redis is already connected. 
+2025-07-13T18:51:58.601Z [INFO]: Database connected (development) 
+2025-07-13T18:53:00.372Z [INFO]: Redis connected successfully 
+2025-07-13T18:53:00.374Z [INFO]: Database connected successfully 
+2025-07-13T18:53:00.381Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:53:00.390Z [INFO]: Redis is already connected. 
+2025-07-13T18:53:00.624Z [INFO]: Database connected (development) 
+2025-07-13T18:53:41.147Z [INFO]: Redis connected successfully 
+2025-07-13T18:53:41.150Z [INFO]: Database connected successfully 
+2025-07-13T18:53:41.156Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:53:41.167Z [INFO]: Redis is already connected. 
+2025-07-13T18:53:41.229Z [INFO]: Database connected (development) 
+2025-07-13T18:54:57.970Z [INFO]: Redis connected successfully 
+2025-07-13T18:54:57.974Z [INFO]: Database connected successfully 
+2025-07-13T18:54:57.990Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:54:58.008Z [INFO]: Redis is already connected. 
+2025-07-13T18:54:58.074Z [INFO]: Database connected (development) 
+2025-07-13T18:55:22.764Z [INFO]: Redis connected successfully 
+2025-07-13T18:55:22.766Z [INFO]: Database connected successfully 
+2025-07-13T18:55:22.771Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:55:22.779Z [INFO]: Redis is already connected. 
+2025-07-13T18:55:22.827Z [INFO]: Database connected (development) 
+2025-07-13T18:56:03.347Z [INFO]: Redis connected successfully 
+2025-07-13T18:56:03.349Z [INFO]: Database connected successfully 
+2025-07-13T18:56:03.354Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:56:03.362Z [INFO]: Redis is already connected. 
+2025-07-13T18:56:03.413Z [INFO]: Database connected (development) 
+2025-07-13T18:57:13.512Z [INFO]: Redis connected successfully 
+2025-07-13T18:57:13.514Z [INFO]: Database connected successfully 
+2025-07-13T18:57:13.520Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:57:13.529Z [INFO]: Redis is already connected. 
+2025-07-13T18:57:13.577Z [INFO]: Database connected (development) 
+2025-07-13T18:57:16.819Z [INFO]: GET /api/transactions?page=1&limit=10&sortBy=createdAt&sortOrder=desc 200 - 32ms {"requestId":"cd3b3687-b1cb-4089-a2ad-e8a6c21d1341","method":"GET","url":"/api/transactions?page=1&limit=10&sortBy=createdAt&sortOrder=desc","statusCode":200,"duration":32,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T18:57:47.651Z [INFO]: POST /api/transactions 419 - 37ms {"requestId":"82326972-3f02-478b-8ab5-e0b2985caa4e","method":"POST","url":"/api/transactions","statusCode":419,"duration":37,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T18:57:56.434Z [INFO]: POST /api/transactions 419 - 5ms {"requestId":"d2a5b491-729c-41fc-b185-06ea60bca6f5","method":"POST","url":"/api/transactions","statusCode":419,"duration":5,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T18:59:15.341Z [INFO]: Redis connected successfully 
+2025-07-13T18:59:15.343Z [INFO]: Database connected successfully 
+2025-07-13T18:59:15.349Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:59:15.357Z [INFO]: Redis is already connected. 
+2025-07-13T18:59:15.409Z [INFO]: Database connected (development) 
+2025-07-13T18:59:17.272Z [INFO]: POST /api/transactions 419 - 14ms {"requestId":"fcf0532c-925e-4b07-ae2d-dc20b390efae","method":"POST","url":"/api/transactions","statusCode":419,"duration":14,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T18:59:30.102Z [INFO]: Redis connected successfully 
+2025-07-13T18:59:30.104Z [INFO]: Database connected successfully 
+2025-07-13T18:59:30.111Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:59:30.120Z [INFO]: Redis is already connected. 
+2025-07-13T18:59:30.170Z [INFO]: Database connected (development) 
+2025-07-13T18:59:32.358Z [INFO]: POST /api/transactions 419 - 14ms {"requestId":"98bf8f72-cc67-47f3-ba0a-f3d5fe0f5603","method":"POST","url":"/api/transactions","statusCode":419,"duration":14,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T18:59:35.316Z [INFO]: Redis connected successfully 
+2025-07-13T18:59:35.317Z [INFO]: Database connected successfully 
+2025-07-13T18:59:35.324Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T18:59:35.332Z [INFO]: Redis is already connected. 
+2025-07-13T18:59:35.380Z [INFO]: Database connected (development) 
+2025-07-13T19:00:24.505Z [INFO]: POST /api/transactions 201 - 97ms {"requestId":"86f7b8db-28ad-4230-ae9b-426960f01e20","method":"POST","url":"/api/transactions","statusCode":201,"duration":97,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:00:25.925Z [INFO]: POST /api/transactions 200 - 2ms {"requestId":"d2e7dfd3-3228-4103-a5c8-bcba2bd466a2","method":"POST","url":"/api/transactions","statusCode":200,"duration":2,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:00:27.372Z [INFO]: POST /api/transactions 200 - 4ms {"requestId":"50c97222-3b5c-4b44-a968-2e09e84f785c","method":"POST","url":"/api/transactions","statusCode":200,"duration":4,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:01:08.599Z [INFO]: Redis connected successfully 
+2025-07-13T19:01:08.601Z [INFO]: Database connected successfully 
+2025-07-13T19:01:08.607Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T19:01:08.616Z [INFO]: Redis is already connected. 
+2025-07-13T19:01:08.663Z [INFO]: Database connected (development) 
+2025-07-13T19:02:01.714Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
+2025-07-13T19:02:01.717Z [INFO]: Redis connection closed successfully. 
+2025-07-13T19:04:31.500Z [INFO]: Redis connected successfully 
+2025-07-13T19:04:31.504Z [INFO]: Database connected successfully 
+2025-07-13T19:04:31.514Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T19:04:31.525Z [INFO]: Redis is already connected. 
+2025-07-13T19:04:31.573Z [INFO]: Database connected (development) 
+2025-07-13T19:04:35.982Z [INFO]: POST /api/transactions 200 - 11ms {"requestId":"82a47bcb-301e-49c9-89df-dcfe0c6b3224","method":"POST","url":"/api/transactions","statusCode":200,"duration":11,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:04:37.297Z [INFO]: POST /api/transactions 200 - 2ms {"requestId":"418b3ab7-439e-47b8-b941-05024afe8bad","method":"POST","url":"/api/transactions","statusCode":200,"duration":2,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:04:43.733Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
+2025-07-13T19:04:43.737Z [INFO]: Redis connection closed successfully. 
+2025-07-13T19:07:03.270Z [INFO]: Redis connected successfully 
+2025-07-13T19:07:03.272Z [INFO]: Database connected successfully 
+2025-07-13T19:07:03.278Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T19:07:03.286Z [INFO]: Redis is already connected. 
+2025-07-13T19:07:03.335Z [INFO]: Database connected (development) 
+2025-07-13T19:07:11.519Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
+2025-07-13T19:07:11.523Z [INFO]: Redis connection closed successfully. 
+2025-07-13T19:09:38.204Z [INFO]: Redis connected successfully 
+2025-07-13T19:09:38.207Z [INFO]: Database connected successfully 
+2025-07-13T19:09:38.218Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T19:09:38.234Z [INFO]: Redis is already connected. 
+2025-07-13T19:09:38.284Z [INFO]: Database connected (development) 
+2025-07-13T19:09:44.385Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
+2025-07-13T19:09:44.389Z [INFO]: Redis connection closed successfully. 
+2025-07-13T19:09:55.717Z [INFO]: Redis connected successfully 
+2025-07-13T19:09:55.720Z [INFO]: Database connected successfully 
+2025-07-13T19:09:55.727Z [INFO]: Server running on http://localhost:4000 
+2025-07-13T19:09:55.737Z [INFO]: Redis is already connected. 
+2025-07-13T19:09:55.792Z [INFO]: Database connected (development) 
+2025-07-13T19:10:57.866Z [INFO]: POST /api/transactions 200 - 13ms {"requestId":"899eb85b-917a-4ce6-950c-7392ad44dc4e","method":"POST","url":"/api/transactions","statusCode":200,"duration":13,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:11:10.072Z [INFO]: POST /api/transactions 200 - 2ms {"requestId":"2b7c9eeb-5fa6-4b64-a5ed-cd55cf74c67a","method":"POST","url":"/api/transactions","statusCode":200,"duration":2,"ip":"::1","userAgent":"PostmanRuntime/7.44.1"}
+2025-07-13T19:13:11.414Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
+2025-07-13T19:13:11.417Z [INFO]: Redis connection closed successfully. 
