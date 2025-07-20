@@ -1,8 +1,6 @@
 # Idempotency Demo with Redis
 
-This project demonstrates how to implement an **idempotency mechanism** using **Node.js**, **Express**, **TypeScript**, and **Redis**.
-
-Idempotency is useful to ensure that duplicate requests (e.g., due to retries, network issues, or user refreshes) do not result in duplicate processing or side effects—especially in `POST`/`PUT` operations like creating payments or transactions.
+This project demonstrates implementing an idempotency mechanism in a **TypeScript-based API** using **Express** and **Redis**. It ensures duplicate requests (from retries, refreshes, etc.) do not cause repeated processing, especially in `POST`/`PUT` operations like payments or transactions.
 
 ---
 
