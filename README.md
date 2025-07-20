@@ -274,11 +274,11 @@ To create the database schema, run:
 make refresh-migrate
 ```
 
-This will execute all pending migrations.
+This will apply all pending migrations to your PostgreSQL database.
 
 ### 🐳 Run Using Docker
 
-To build and run all services (PostgreSQL, Redis, and NodeJs app):
+To build and run all services (PostgreSQL, Redis, and TypeScript app):
 
 ```bash
 make docker-up

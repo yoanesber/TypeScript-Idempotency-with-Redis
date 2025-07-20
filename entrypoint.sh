@@ -7,8 +7,8 @@ while ! nc -z $DB_HOST $DB_PORT; do
 done
 echo "Database is ready."
 
-# Run migrations and seeders
-echo "Running migrations and seeders..."
+# Run migrations
+echo "Running migrations..."
 npx sequelize-cli db:migrate:undo:all
 npx sequelize-cli db:migrate
 echo "Migrations completed."

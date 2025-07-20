@@ -1,5 +1,0 @@
-2025-07-13T19:02:01.714Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
-2025-07-13T19:04:43.733Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
-2025-07-13T19:07:11.519Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
-2025-07-13T19:09:44.385Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
-2025-07-13T19:13:11.414Z [ERROR]: Error disconnecting from the database: Error: Dialect needs to be explicitly supplied as of v4.0.0 
