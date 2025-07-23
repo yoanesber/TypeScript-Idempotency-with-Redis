@@ -3,8 +3,8 @@ import 'dotenv/config';
 
 import AppError from "../exceptions/app-error.exception";
 
-const devOrigins = ['http://localhost:3000'];
-const prodOrigins = ['https://your-production-frontend.com'];
+const devOrigins = process.env.FRONTEND_URL?.split(',') || [];
+const prodOrigins = process.env.FRONTEND_URL_PRODUCTION?.split(',') || [];
 const allowedOrigins = process.env.NODE_ENV === 'production' ? prodOrigins : devOrigins;
 
 const corsOptions: cors.CorsOptions = {
@@ -18,6 +18,7 @@ const corsOptions: cors.CorsOptions = {
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
+    exposedHeaders: ["Content-Length"],
 };
 
 export default cors(corsOptions);

@@ -548,3 +548,16 @@ Idempotency-Key: "unique-key-123"
 ```
 
 ---
+
+
+## 📘 API Documentation  
+
+The API is documented using **Swagger (OpenAPI `3.0`)**. You can explore and test API endpoints directly from the browser using Swagger UI at:
+
+```http
+http://localhost:4000/api-docs
+```
+
+This provides an interactive interface to explore the API endpoints, request/response formats, and available operations.
+
+OpenAPI Spec can be found in  [`swagger.yaml`](./swagger.yaml) file.
