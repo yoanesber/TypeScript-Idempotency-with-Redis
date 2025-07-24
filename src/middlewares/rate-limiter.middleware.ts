@@ -4,6 +4,13 @@ import rateLimit from "express-rate-limit";
 import AppError from "../exceptions/app-error.exception";
 import FormatResponse from '../utils/response.util';
 
+/**
+ * Rate limiter middleware to limit the number of requests.
+ * This middleware is used to prevent abuse by limiting the number of requests
+ * a user can make to the server within a specified time window.
+ * It can be configured for different endpoints with different limits.
+ */
+
 // Handler when rate limit is exceeded
 const rateLimitHandler = (req: Request, res: Response, next: Function, options: any) => {
     const error = AppError.TooManyRequests(options.message?.message || "Too many requests", {

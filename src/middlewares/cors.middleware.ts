@@ -3,6 +3,11 @@ import 'dotenv/config';
 
 import AppError from "../exceptions/app-error.exception";
 
+/**
+ * CORS middleware options.
+ * This middleware is used to enable Cross-Origin Resource Sharing (CORS)
+ * for your application, allowing it to accept requests from different origins.
+ */
 const devOrigins = process.env.FRONTEND_URL?.split(',') || [];
 const prodOrigins = process.env.FRONTEND_URL_PRODUCTION?.split(',') || [];
 const allowedOrigins = process.env.NODE_ENV === 'production' ? prodOrigins : devOrigins;

@@ -10,6 +10,13 @@ import {
     UpdatedAt,
 } from 'sequelize-typescript';
 
+/**
+ * IdempotencyMeta model for storing idempotency metadata.
+ * This model is used to track idempotent requests and their responses.
+ * It includes fields for the idempotency key, body hash, response payload,
+ * and timestamps for creation and updates.
+ */
+
 // Define the base attribute type
 interface IdempotencyMetaAttributes {
     key: string;

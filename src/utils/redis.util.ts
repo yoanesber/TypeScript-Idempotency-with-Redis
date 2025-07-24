@@ -1,6 +1,11 @@
 import AppError from "../exceptions/app-error.exception";
 import RedisConfig from "../config/redis.config";
 
+/**
+ * Utility class for interacting with Redis.
+ * This class provides methods to set, get, and delete cache entries in Redis.
+ * It handles JSON serialization and deserialization of values.
+ */
 class RedisUtil {
     static async set(key: string, value: any, ttl: number = 3600): Promise<void> {
         const jsonValue = JSON.stringify(value);

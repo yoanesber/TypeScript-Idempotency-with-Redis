@@ -10,6 +10,12 @@ import {
     UpdatedAt,
 } from 'sequelize-typescript';
 
+/**
+ * Transaction model for handling financial transactions.
+ * This model represents a transaction with fields for type, amount, status, and consumer ID.
+ * It includes timestamps for creation and updates.
+ */
+
 // Define the base attribute type
 interface TransactionAttributes {
     id: string;

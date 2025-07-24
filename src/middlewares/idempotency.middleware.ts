@@ -8,6 +8,12 @@ import RedisUtil from "../utils/redis.util";
 import { IdempotencyInterface } from "../types/idempotency.interface";
 import { IdempotencyMeta } from "../models/idempotency-meta.model";
 
+/**
+ * Idempotency middleware for handling idempotent requests.
+ * This middleware checks if a request with the same idempotency key and body hash
+ * has already been processed, and returns the cached response if it exists.
+ * If not, it allows the request to proceed and stores the response in Redis.
+ */
 const idempotencyMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     // Ensure the request method is idempotent
     // This middleware is typically used for POST requests, but can be adapted for PUT/PATCH

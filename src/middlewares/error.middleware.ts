@@ -3,6 +3,12 @@ import { Request, Response, NextFunction } from "express";
 import AppError from '../exceptions/app-error.exception';
 import FormatResponse from '../utils/response.util';
 
+/**
+ * Error handling middleware.
+ * This middleware catches errors thrown in the application,
+ * formats them, and sends a response to the client.
+ * It handles both custom AppError instances and unexpected errors.
+ */
 const errorHandler = (err: any, req: Request, res: Response, next: NextFunction): void => {
     // AppError for custom application errors
     if (err instanceof AppError) {

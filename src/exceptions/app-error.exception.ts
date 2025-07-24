@@ -1,3 +1,8 @@
+/**
+ * Custom error class for handling application errors.
+ * This class extends the built-in Error class and adds additional properties
+ * such as statusCode and details to provide more context about the error.
+ */
 class AppError extends Error {
     statusCode: number;
     details?: any;

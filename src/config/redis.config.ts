@@ -1,8 +1,15 @@
 import "dotenv/config";
 import Redis from "ioredis";
 
-import logger from "../utils/logger.util";
+import Logger from "../utils/logger.util";
 
+/**
+ * Redis configuration class.
+ * This class handles the connection to Redis using ioredis.
+ * It provides methods to connect, disconnect, and manage the Redis client.
+ * It also allows access to the Redis client and checks the connection status.
+ * It supports basic operations like ping and flushing the database.
+ */
 class RedisConfig {
     private redisClient: Redis;
     private host: string;
@@ -42,7 +49,7 @@ class RedisConfig {
             const response = await this.redisClient.ping();
             return response === "PONG";
         } catch (error) {
-            logger.error("Redis ping error:", error);
+            Logger.error("Redis ping error:", error);
             return false;
         }
     }
@@ -50,10 +57,10 @@ class RedisConfig {
     public async flushDb(): Promise<string> {
         try {
             const response = await this.redisClient.flushdb();
-            logger.info("Redis database flushed:", response);
+            Logger.info("Redis database flushed:", response);
             return response;
         } catch (error) {
-            logger.error("Error flushing Redis database:", error);
+            Logger.error("Error flushing Redis database:", error);
             throw error;
         }
     }
@@ -61,9 +68,9 @@ class RedisConfig {
     public async quit(): Promise<void> {
         try {
             await this.redisClient.quit();
-            logger.info("Redis connection closed successfully.");
+            Logger.info("Redis connection closed successfully.");
         } catch (error) {
-            logger.error("Error closing Redis connection:", error);
+            Logger.error("Error closing Redis connection:", error);
             throw error;
         }
     }
@@ -71,13 +78,13 @@ class RedisConfig {
     public async connect(): Promise<void> {
         try {
             if (await this.ping()) {
-                logger.info("Redis is already connected.");
+                Logger.info("Redis is already connected.");
                 return;
             }
             await this.redisClient.connect();
-            logger.info("Redis connected successfully.");
+            Logger.info("Redis connected successfully.");
         } catch (error) {
-            logger.error("Error connecting to Redis:", error);
+            Logger.error("Error connecting to Redis:", error);
             throw error;
         }
     }

@@ -9,6 +9,12 @@ import { IdempotencyMeta, IdempotencyMetaCreationAttributes } from "../models/id
 import { TransactionRequest, TransactionRequestSchema } from "../dtos/transaction-request.dto";
 import { TransactionResponse } from "../dtos/transaction-response.dto";
 
+/**
+ * TransactionService handles the business logic for transactions.
+ * It provides methods to create and retrieve transactions,
+ * ensuring idempotency and proper error handling.
+ */
+
 class TransactionService {
     async createTransaction(idempotencyKey: string, bodyHash: string, transactionRequest: TransactionRequest): Promise<TransactionResponse> {
         // Validate the idempotency key

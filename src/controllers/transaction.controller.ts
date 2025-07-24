@@ -8,6 +8,11 @@ import { IdempotencyInterface } from "../types/idempotency.interface";
 import { TransactionRequestSchema } from "../dtos/transaction-request.dto";
 import { TransactionResponse } from "../dtos/transaction-response.dto";
 
+/**
+ * TransactionController handles the transaction-related endpoints.
+ * It provides methods to create and retrieve transactions.
+ * It uses TransactionService to handle the business logic.
+ */
 class TransactionController {
     async createTransaction(req: Request, res: Response): Promise<void> {
         // Validate the request body against the TransactionRequestSchema

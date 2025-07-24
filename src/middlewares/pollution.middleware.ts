@@ -2,6 +2,12 @@ import { Request, Response, NextFunction } from "express";
 
 import AppError from '../exceptions/app-error.exception';
 
+/**
+ * Middleware to detect parameter pollution.
+ * It checks if any query parameters have multiple values,
+ * which can indicate parameter pollution attacks.
+ * If such parameters are found, it throws a BadRequest error.
+ */
 const detectParameterPollution = (req: Request, res: Response, next: NextFunction) => {
     const pollutedParams: Record<string, string[]> = {};
 
